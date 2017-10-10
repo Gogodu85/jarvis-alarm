@@ -8,72 +8,35 @@
 # You can use translations provided in the language folders functions.sh
 
 pg_alarm_main_fr () {
-say "$(pg_jarvis-alarm_fr "alarm_hours" "$1" "$2")" 
+#say "$(pg_jarvis-alarm_fr "alarm_hours" "$1" "$2")" 
 
-# convert wakeup time to seconds
-target_h=$(($1*3600))
-target_m=$(($2*60))
-target_s_t=$(($target_h + $target_m))
+date="$1:$2 Today"
 
-# get current time and convert to seconds
-clock_h=$(date +%H)
-clock_m=$(date +%M)
-clock_s=$(date +%S)
-clock_s_t=`dc -e "$clock_h 60 60 ** $clock_m 60 * $clock_s ++p"`
-
-# calculate difference in times, add number of sec. in day and mod by same
-sec_until=`dc -e "24 60 60 **d $target_s_t $clock_s_t -+r%p"`
-
+say "L'alarme est programmé pour le $(date --date="$date")."
 say "Veuillez attendre la fin de l'alarme pour donner d'autre instructions."
-
-sleep $sec_until
-
-time_h=$(date +%H)
-time_m=$(date +%M)
+sleep $(( $(date --date="$date" +%s) - $(date +%s) ));
 
 if [ $wake_music != "null" ]
 then
    play $wake_music
 fi
 
-say "Réveillez-vous il es $time_h heures $time_m"
+say "Il es $1 heures $2"
 }
 
-# ---------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------
+pg_reveil_main_fr () {
+#say "$(pg_jarvis-alarm_fr "alarm_hours" "$1" "$2")" 
 
-pg_alarm_main_en () {
-say "$(pg_jarvis-alarm_en "alarm_hours" "$1" "$2")" 
+date="$1:$2 Tomorrow"
 
-# convert wakeup time to seconds
-target_h=$(($1*3600))
-target_m=$(($2*60))
-target_s_t=$(($target_h + $target_m))
-
-# get current time and convert to seconds
-clock_h=$(date +%H)
-clock_m=$(date +%M)
-clock_s=$(date +%S)
-clock_s_t=`dc -e "$clock_h 60 60 ** $clock_m 60 * $clock_s ++p"`
-
-# calculate difference in times, add number of sec. in day and mod by same
-sec_until=`dc -e "24 60 60 **d $target_s_t $clock_s_t -+r%p"`
-
-say "Please wait for the alarm to give other instructions."
-
-sleep $sec_until
-
-time_h=$(date +%H)
-time_m=$(date +%M)
+say "Le réveil est programmé pour le $(date --date="$date")."
+say "Veuillez attendre la fin du réveil pour donner d'autre instructions."
+sleep $(( $(date --date="$date" +%s) - $(date +%s) ));
 
 if [ $wake_music != "null" ]
 then
-   mpg321 $wake_music
+   play $wake_music
 fi
 
-say "Wake up it's $time_h hours $time_m"
+say "Réveillez-vous il es $1 heures $2"
 }
