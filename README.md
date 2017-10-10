@@ -23,5 +23,3 @@ Jarvis: Réveillez-vous il es 06 heures 30
 
 ## Auteur / Author
 [Pineapple-Geek](https://www.facebook.com/Pineapple.Geek)
-
-Réveillez-vous i
