@@ -4,21 +4,37 @@
 
 # Utilisation / Usage
 
-Français (Alarme):
+Français:
 ```
-Vous: Mets l'alarme pour 06h 30 minutes
-Jarvis: L'alarme est programmé pour le mardi 10 octobre 2017, 06:30:00 (UTC+0200)
-Jarvis: Veuillez attendre la fin de l'alarme pour donner d'autre instructions.
+You: Mets une alarme pour 06 heures 30 minutes demain
+Jarvis: L'alarme est programmé pour 06 heures 30 minutes demain
+job X at (date et heure de l'alarme)
 ...
-Jarvis: Il es 06 heures 30
+Lancement des commande stocker dans le fichier command.sh
+
 ```
-Français (Réveil):
+Anglais:
 ```
-Vous: Mets le réveil pour 06h 30 minutes.
-Jarvis: L'alarme est programmé pour le mardi 11 octobre 2017, 06:30:00 (UTC+0200)
-Jarvis: Veuillez attendre la fin de l'alarme pour donner d'autre instructions.
+You: Set the alarm for 06 hours 30 minutes tomorrow
+Jarvis: The alarm is programmed for 06 hours 30 minutes tomorrow
+job X at (date and time of the alarm)
 ...
-Jarvis: Réveillez-vous il es 06 heures 30
+Launch control store in the file command.sh
+
+```
+Commande de Jour Disponible:
+```
+
+Aujourd'hui / Today
+Demain / Tomorrow
+Lundi / Monday
+Mardi / Tuesday
+Mercredi / Wednesday
+Jeudi / Thursday
+Vendredi / Friday
+Samedi / Sathurday
+Dimanche / Sunday
+
 ```
 
 ## Auteur / Author

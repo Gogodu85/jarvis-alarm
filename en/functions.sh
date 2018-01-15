@@ -16,15 +16,14 @@
 #    esac
 #} 
 
-pg_jarvis-alarm_fr () {
+pg_jarvis-alarm_en () {
     case "$1" in
-        alarm_hours) echo "L'alarme est programmé pour $2 heures $3 minutes $4";;
+        alarm_hours) echo "The alarm is programmed for $2 hours $3 $4";;
     esac
 } 
 
-pg_jarvis-alarmremove_fr () {
+pg_jarvis-alarmremove_en () {
     case "$1" in
-        alarm_remove) echo "Toutes les alarme on bien était supprimer";;
+        alarm_remove) echo "All the alarms we had was delete";;
     esac
 } 
-
