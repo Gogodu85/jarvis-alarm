@@ -6,7 +6,7 @@
 
 Français:
 ```
-You: Mets une alarme pour 06 heures 30 minutes demain
+You: Mets une alarme pour 06h30 demain
 Jarvis: L'alarme est programmé pour 06 heures 30 minutes demain
 job X at (date et heure de l'alarme)
 ...
@@ -15,7 +15,7 @@ Lancement des commande stocker dans le fichier command.sh
 ```
 Anglais:
 ```
-You: Set the alarm for 06 hours 30 minutes tomorrow
+You: Set the alarm for 06h30 tomorrow
 Jarvis: The alarm is programmed for 06 hours 30 minutes tomorrow
 job X at (date and time of the alarm)
 ...
