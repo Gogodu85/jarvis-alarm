@@ -4,6 +4,7 @@
 
 # Utilisation / Usage
 
+## Ajouter une alarme / Add alarm
 Français:
 ```
 You: Mets une alarme pour 06h30 demain
@@ -22,7 +23,22 @@ job X at (date and time of the alarm)
 Launch control store in the file command.sh
 
 ```
-Commande de Jour Disponible:
+
+## Supprimer toutes les alarme / Remove all Alarms
+
+```
+You: Supprimer alarme
+Jarvis: Toutes les alarme on bien était supprimer 
+
+```
+Anglais:
+```
+You: Remove Alarm
+Jarvis: All the alarms we had was delete 
+
+```
+
+# Commande de Jour Disponible:
 ```
 
 Aujourd'hui / Today
