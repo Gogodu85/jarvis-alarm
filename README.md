@@ -4,7 +4,7 @@
 
 # Utilisation / Usage
 
-## Ajouter une alarme / Add alarm
+## Ajouter une alarme / Add alarm:
 Français:
 ```
 You: Mets une alarme pour 06h30 demain
@@ -24,7 +24,7 @@ Launch control store in the file command.sh
 
 ```
 
-## Supprimer toutes les alarme / Remove all Alarms
+## Supprimer toutes les alarme / Remove all Alarms:
 
 ```
 You: Supprimer alarme
